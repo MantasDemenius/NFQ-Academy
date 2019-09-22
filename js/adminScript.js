@@ -8,6 +8,7 @@ function loadJson() {
             if (httpRequest.status === 200) {
                 var data = JSON.parse(httpRequest.responseText);
                 console.log(data);
+                arraySort(data["clients"]);
                 localStorage.setItem('clientData', JSON.stringify(data));
             }
         }
@@ -20,13 +21,17 @@ function addForm() {
   const itemsArray =
     {
         "name": inputName.value,
-        "number": "10",
+        "number": 10,
         "state": true,
         "specialist": inputSpecialist.value
       }
   const parsed = JSON.parse(localStorage.getItem('clientData'));
   let clientLength = parsed["clients"].length;
   parsed["clients"][clientLength] =  itemsArray;
-  parsed["clients"].sort((a, b) => (a.specialistas > b.specialistas) ? 1 : (a.specialistas === b.specialistas) ? ((a.numeris > b.numeris) ? 1 : -1) : -1 )
+  arraySort(parsed["clients"]);
   localStorage.setItem('clientData', JSON.stringify(parsed));
+}
+
+const arraySort = (data) => {
+  data.sort((a, b) => (a.specialist > b.specialist) ? 1 : (a.specialist === b.specialist) ? ((a.number > b.number) ? 1 : -1) : -1 );
 }

@@ -36,5 +36,22 @@
     <button class="json-load-btn" onclick="loadJson()">Load</button>
 	</div>
 </div>
+
+<script>
+function loadJson() {
+  var httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+            if (httpRequest.status === 200) {
+                var data = JSON.parse(httpRequest.responseText);
+                console.log(data);
+                localStorage.setItem('clientData', JSON.stringify(data));
+            }
+        }
+    };
+    httpRequest.open('GET', './json/InitialData.json');
+    httpRequest.send();
+}
+</script>
 </body>
 </html>

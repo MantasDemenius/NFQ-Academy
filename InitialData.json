@@ -1,0 +1,49 @@
+{
+  "clients": [
+    "1": {
+      "vardas": "Eloise Wilcox",
+      "numeris": "1",
+      "specialistas": "Rowan Mcdougall"
+    },
+    "2": {
+      "vardas": "Sian Barber",
+      "numeris": "2",
+      "specialistas": "Rowan Mcdougall"
+    },
+    "3": {
+      "vardas": "Siraj Ashley",
+      "numeris": "1",
+      "specialistas": "Jayce Haines"
+    },
+    "4": {
+      "vardas": "Tania Keeling",
+      "numeris": "3",
+      "specialistas": "Rowan Mcdougall"
+    },
+    "5": {
+      "vardas": "Tayyib Charles",
+      "numeris": "2",
+      "specialistas": "Jayce Haines"
+    },
+    "6": {
+      "vardas": "Kavan Bostock",
+      "numeris": "5",
+      "specialistas": "Vikram Hall"
+    },
+    "7": {
+      "vardas": "Karson Hurley",
+      "numeris": "4",
+      "specialistas": "Jayce Haines"
+    },
+    "8": {
+      "vardas": "Ameen Medrano",
+      "numeris": "2",
+      "specialistas": "Vikram Hall"
+    },
+    "9": {
+      "vardas": "Hawa Larson",
+      "numeris": "6",
+      "specialistas": "Vikram Hall"
+    }
+  ]
+}

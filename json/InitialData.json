@@ -1,49 +1,67 @@
 {
-  "clients": [
-    {
-      "vardas": "Eloise Wilcox",
-      "numeris": "1",
-      "specialistas": "Rowan Mcdougall"
+  "specialists": [{
+      "name": "Rowan Mcdougall"
     },
     {
-      "vardas": "Sian Barber",
-      "numeris": "2",
-      "specialistas": "Rowan Mcdougall"
+      "name": "Jayce Haines"
     },
     {
-      "vardas": "Siraj Ashley",
-      "numeris": "1",
-      "specialistas": "Jayce Haines"
+      "name": "Vikram Hall"
+    }
+  ],
+  "clients": [{
+      "name": "Eloise Wilcox",
+      "number": 1,
+      "state": true,
+      "specialist": "Rowan Mcdougall"
     },
     {
-      "vardas": "Tania Keeling",
-      "numeris": "3",
-      "specialistas": "Rowan Mcdougall"
+      "name": "Sian Barber",
+      "number": 2,
+      "state": true,
+      "specialist": "Rowan Mcdougall"
     },
     {
-      "vardas": "Tayyib Charles",
-      "numeris": "2",
-      "specialistas": "Jayce Haines"
+      "name": "Siraj Ashley",
+      "number": 1,
+      "state": true,
+      "specialist": "Jayce Haines"
     },
     {
-      "vardas": "Kavan Bostock",
-      "numeris": "5",
-      "specialistas": "Vikram Hall"
+      "name": "Tania Keeling",
+      "number": 3,
+      "state": true,
+      "specialist": "Rowan Mcdougall"
     },
     {
-      "vardas": "Karson Hurley",
-      "numeris": "4",
-      "specialistas": "Jayce Haines"
+      "name": "Tayyib Charles",
+      "number": 2,
+      "state": true,
+      "specialist": "Jayce Haines"
     },
     {
-      "vardas": "Ameen Medrano",
-      "numeris": "2",
-      "specialistas": "Vikram Hall"
+      "name": "Kavan Bostock",
+      "number": 5,
+      "state": true,
+      "specialist": "Vikram Hall"
     },
     {
-      "vardas": "Hawa Larson",
-      "numeris": "6",
-      "specialistas": "Vikram Hall"
+      "name": "Karson Hurley",
+      "number": 4,
+      "state": true,
+      "specialist": "Jayce Haines"
+    },
+    {
+      "name": "Ameen Medrano",
+      "number": 2,
+      "state": true,
+      "specialist": "Vikram Hall"
+    },
+    {
+      "name": "Hawa Larson",
+      "number": 6,
+      "state": true,
+      "specialist": "Vikram Hall"
     }
   ]
 }

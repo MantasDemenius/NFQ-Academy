@@ -62,7 +62,7 @@
 /*********************************************************************************/
 /* Form Style                                                                    */
 /*********************************************************************************/
-	
+
 		form
 		{
 		}
@@ -445,7 +445,6 @@
 	{
 		overflow: hidden;
 		width: 1200px;
-		padding: 2em 0px 0em 0px;
 		text-align: center;
 	}
 
@@ -479,7 +478,6 @@
 	#page-wrapper
 	{
 		overflow: hidden;
-		padding: 3em 0em 0em 0em;
 		text-align: center;
 	}
 
@@ -603,25 +601,14 @@
 		color: rgba(0,0,0,0.8);
 	}
 
-	.column1,
-	.column2,
-	.column3,
-	.column4
+	.column
 	{
-		width: 282px;
+		width: 237px;
 	}
 
-	.column1,
-	.column2,
-	.column3
+	.column
 	{
 		float: left;
-		margin-right: 24px;
-	}
-
-	.column4
-	{
-		float: right;
 	}
 
 /*********************************************************************************/

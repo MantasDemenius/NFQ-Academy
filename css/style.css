@@ -23,3 +23,8 @@
   cursor: pointer;
   margin: auto;
 }
+
+#table-head {
+  font-size: 30px;
+  margin:auto;
+}

@@ -7,7 +7,7 @@ window.onload = () => {
   //   document.getElementById('table-head').appendChild(th);
   // });
   items["clients"].map(person => {
-    if(person.state) {
+    if(person.state === 'Neaptarnautas') {
       const tr = document.createElement('tr');
       const td1 = document.createElement('td');
       const td2 = document.createElement('td');

@@ -1,14 +1,4 @@
 {
-  "specialists": [{
-      "name": "Rowan Mcdougall"
-    },
-    {
-      "name": "Jayce Haines"
-    },
-    {
-      "name": "Vikram Hall"
-    }
-  ],
   "clients": [{
       "name": "Eloise Wilcox",
       "number": 1,

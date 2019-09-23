@@ -14,15 +14,13 @@
 
         var button = document.createElement('input');
 
-        // SET INPUT ATTRIBUTE.
         button.setAttribute('type', 'button');
         button.setAttribute('value', 'Aptarnauti');
 
-        // ADD THE BUTTON's 'onclick' EVENT.
         button.onclick = () => {
           person.state = 'Aptarnautas';
-          localStorage.setItem('clientData', JSON.stringify(items));
           td3.textContent = 'Aptarnautas';
+          localStorage.setItem('clientData', JSON.stringify(items));
         }
 
         td1.className = "cell100 column";
@@ -37,7 +35,6 @@
         tr.appendChild(td3);
         tr.appendChild(button);
         document.getElementById('table-body').appendChild(tr);
-        // document.getElementById('table-body').appendChild(td2);
 
       }
     });

@@ -34,8 +34,12 @@
 			<h2>Click the button to load data from json</h2>
 		</div>
     <button class="json-load-btn" onclick="loadJson()">Load</button>
-      <input id="addName" type="text" placeholder="Vardas pavardė">
-      <input id="addSpecialist" type="text" placeholder="Specialisto vardas">
+      <input id="addName" type="text" placeholder="Vardas">
+			<select id="optionSpecialist">
+			  <option value="1" selected="selected">Rowan Mcdougall</option>
+			  <option value="2">Jayce Haines</option>
+			  <option value="3">Vikram Hall</option>
+			</select>
       <input onclick="addForm()" type="submit" value="Add">
       <input onclick="localStorage.clear();" type="submit" value="clear">
 	</div>

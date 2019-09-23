@@ -1,5 +1,5 @@
 const inputName = document.getElementById('addName');
-const inputSpecialist = document.getElementById('addSpecialist');
+const inputSpecialist = document.getElementById('optionSpecialist');
 
 function loadJson() {
   var httpRequest = new XMLHttpRequest();
@@ -15,98 +15,21 @@ function loadJson() {
   };
   httpRequest.open('GET', './json/InitialData.json');
   httpRequest.send();
-//   localStorage.setItem('clientData', JSON.stringify({
-//     "specialists": [{
-//         "name": "Rowan Mcdougall"
-//       },
-//       {
-//         "name": "Jayce Haines"
-//       },
-//       {
-//         "name": "Vikram Hall"
-//       }
-//     ],
-//     "clients": [{
-//         "name": "Eloise Wilcox",
-//         "number": 1,
-//         "state": true,
-//         "specialist": "Rowan Mcdougall"
-//       },
-//       {
-//         "name": "Sian Barber",
-//         "number": 2,
-//         "state": true,
-//         "specialist": "Rowan Mcdougall"
-//       },
-//       {
-//         "name": "Siraj Ashley",
-//         "number": 1,
-//         "state": true,
-//         "specialist": "Jayce Haines"
-//       },
-//       {
-//         "name": "Tania Keeling",
-//         "number": 3,
-//         "state": true,
-//         "specialist": "Rowan Mcdougall"
-//       },
-//       {
-//         "name": "Tayyib Charles",
-//         "number": 2,
-//         "state": true,
-//         "specialist": "Jayce Haines"
-//       },
-//       {
-//         "name": "Kavan Bostock",
-//         "number": 5,
-//         "state": true,
-//         "specialist": "Vikram Hall"
-//       },
-//       {
-//         "name": "Karson Hurley",
-//         "number": 4,
-//         "state": true,
-//         "specialist": "Jayce Haines"
-//       },
-//       {
-//         "name": "Ameen Medrano",
-//         "number": 2,
-//         "state": true,
-//         "specialist": "Vikram Hall"
-//       },
-//       {
-//         "name": "Hawa Larson",
-//         "number": 6,
-//         "state": true,
-//         "specialist": "Vikram Hall"
-//       }
-//     ]
-//   }
-// ));
 }
 
 function addForm() {
   const parsed = JSON.parse(localStorage.getItem('clientData')) ? JSON.parse(localStorage.getItem('clientData')) : false;
+
   if (parsed === false) {
-    const itemsArray = {
-      "specialists": [{
-        "name": inputSpecialist.value
-      }],
-      "clients": [{
-        "name": inputName.value,
-        "number": 10,
-        "state": true,
-        "specialist": inputSpecialist.value
-      }]};
-      localStorage.setItem('clientData', JSON.stringify(itemsArray));
+    console.log('Neuzkrauti dumoenys');
 
     }
     else {
       const itemsArray = {
         "name": inputName.value,
         "number": 10,
-        "state": true,
-        "specialist": inputSpecialist.value
+        "state": 'Neaptarnautas',
+        "specialist": inputSpecialist.options[inputSpecialist.selectedIndex].text
       };
       let clientLength = parsed["clients"].length;
       console.log(clientLength);

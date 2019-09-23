@@ -21,7 +21,7 @@
 				<ul>
 					<li><a href="index.html" accesskey="1" title="">Švieslentė</a></li>
 					<li><a href="admin.html" accesskey="2" title="">Administracija</a></li>
-					<li class="active"><a href="specialist.html" accesskey="3" title="">Specialistas</a></li>
+					<li class="active"><a href="specialist.php" accesskey="3" title="">Specialistas</a></li>
 					<li><a href="user.html" accesskey="4" title="">Lankytojas</a></li>
 				</ul>
 			</div>
@@ -30,9 +30,41 @@
 </div>
 <div id="page-wrapper">
 	<div id="welcome" class="container">
-		<div class="title">
-			<h2>Welcome to our website</h2>
-		</div>
+		<a href="specialist.html?specialist=Rowan-Mcdougall">Rowan Mcdougall</a>
+		<a href="specialist.html?specialist=Jayce-Haines">Jayce Haines</a>
+		<a href="specialist.html?specialist=Vikram-Hall">Vikram Hall</a>
+		<?php
+if(isset($_GET["specialist"])){
+ if($_GET["specialist"] == "Rowan-Mcdougall"){
+	 ?>
+	 <div class="message-box">
+		 <div class="isa_success">
+		 <i class="fa fa-check"></i>
+		 <?php echo $emailRecoverySent; ?>
+	 </div>
+ </div>
+		 <?php
+ } elseif($_GET["specialist"] == "Jayce-Haines"){
+	 ?>
+	 <div class="message-box">
+		 <div class="isa_error">
+		 <i class="fa fa-times-circle"></i>
+		 <?php echo $emailRecoveryBadEmail; ?>
+	 </div>
+ </div>
+		 <?php
+ }elseif($_GET["specialist"] == "Vikram-Hall"){
+	 ?>
+	 <div class="message-box">
+		 <div class="isa_success">
+		 <i class="fa fa-check"></i>
+		 Your password has been updated!
+	 </div>
+ </div>
+		 <?php
+	 }
+	}
+	?>
 	</div>
 </div>
 </body>

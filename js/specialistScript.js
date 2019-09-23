@@ -1,18 +1,8 @@
-
   const loadSpecialist = (name) => {
 
-    while(document.getElementById('table-row')){
-      let tableRow = document.getElementById('table-row');
-      tableRow.parentNode.removeChild(tableRow);
-    }
+    removeRow('table-row');
 
   const items = JSON.parse(localStorage.getItem('clientData')) && JSON.parse(localStorage.getItem('clientData'));
-    // items["specialists"].map(person => {
-    //   const th = document.createElement('th');
-    //   th.className = "cell100 column";
-    //   th.textContent = person.name;
-    //   document.getElementById('table-head').appendChild(th);
-    // });
     items["clients"].map(person => {
       if(person.specialist === name) {
         const tr = document.createElement('tr');
@@ -20,17 +10,48 @@
         const td1 = document.createElement('td');
         const td2 = document.createElement('td');
         const td3 = document.createElement('td');
+        const td4 = document.createElement('td');
+
+        var button = document.createElement('input');
+
+        // SET INPUT ATTRIBUTE.
+        button.setAttribute('type', 'button');
+        button.setAttribute('value', 'Aptarnauti');
+
+        // ADD THE BUTTON's 'onclick' EVENT.
+        button.onclick = () => {
+          person.state = 'Aptarnautas';
+          localStorage.setItem('clientData', JSON.stringify(items));
+          td3.textContent = 'Aptarnautas';
+        }
+
         td1.className = "cell100 column";
         td2.className = "cell100 column";
         td3.className = "cell100 column";
+        td4.className = "cell100 column";
         td1.textContent = person.name;
         td2.textContent = person.number;
         td3.textContent = person.state;
         tr.appendChild(td1);
         tr.appendChild(td2);
         tr.appendChild(td3);
+        tr.appendChild(button);
         document.getElementById('table-body').appendChild(tr);
         // document.getElementById('table-body').appendChild(td2);
+
       }
     });
   }
+
+  function changeState(oButton) {
+    console.log(oButton);
+    // let tableRow = document.getElementById('table-row');
+    // tableRow.parentNode.removeChild(oButton.parentNode);
+}
+
+const removeRow = (id) => {
+  while(document.getElementById(id)){
+    let tableRow = document.getElementById(id);
+    tableRow.parentNode.removeChild(tableRow);
+  }
+}

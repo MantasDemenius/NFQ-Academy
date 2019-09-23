@@ -12,55 +12,55 @@
   "clients": [{
       "name": "Eloise Wilcox",
       "number": 1,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Rowan Mcdougall"
     },
     {
       "name": "Sian Barber",
       "number": 2,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Rowan Mcdougall"
     },
     {
       "name": "Siraj Ashley",
       "number": 1,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Jayce Haines"
     },
     {
       "name": "Tania Keeling",
       "number": 3,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Rowan Mcdougall"
     },
     {
       "name": "Tayyib Charles",
       "number": 2,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Jayce Haines"
     },
     {
       "name": "Kavan Bostock",
       "number": 5,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Vikram Hall"
     },
     {
       "name": "Karson Hurley",
       "number": 4,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Jayce Haines"
     },
     {
       "name": "Ameen Medrano",
       "number": 2,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Vikram Hall"
     },
     {
       "name": "Hawa Larson",
       "number": 6,
-      "state": true,
+      "state": "Neaptarnautas",
       "specialist": "Vikram Hall"
     }
   ]

@@ -1,7 +1,12 @@
 
   const loadSpecialist = (name) => {
-  document.getElementById('table-row').parentNode.removeChild('table-row');
-  const items = JSON.parse(localStorage.getItem('clientData')) ? JSON.parse(localStorage.getItem('clientData')) : "No clients";
+
+    while(document.getElementById('table-row')){
+      let tableRow = document.getElementById('table-row');
+      tableRow.parentNode.removeChild(tableRow);
+    }
+
+  const items = JSON.parse(localStorage.getItem('clientData')) && JSON.parse(localStorage.getItem('clientData'));
     // items["specialists"].map(person => {
     //   const th = document.createElement('th');
     //   th.className = "cell100 column";

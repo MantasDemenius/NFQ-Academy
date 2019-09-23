@@ -17,7 +17,7 @@
 }
 
 .json-load-btn {
-  display: block;
+  display: inline-block;
   width: 340px;
   height: 80px;
   cursor: pointer;

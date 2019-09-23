@@ -1,5 +1,6 @@
 
   const loadSpecialist = (name) => {
+  document.getElementById('table-row').parentNode.removeChild('table-row');
   const items = JSON.parse(localStorage.getItem('clientData')) ? JSON.parse(localStorage.getItem('clientData')) : "No clients";
     // items["specialists"].map(person => {
     //   const th = document.createElement('th');
@@ -8,14 +9,21 @@
     //   document.getElementById('table-head').appendChild(th);
     // });
     items["clients"].map(person => {
-      if(person.name === name) {
+      if(person.specialist === name) {
         const tr = document.createElement('tr');
-        for(let i in person){
-          const td = document.createElement('td');
-          td.className = "cell100 column";
-          td.textContent = i;
-        }
+        tr.setAttribute('id', 'table-row');
+        const td1 = document.createElement('td');
+        const td2 = document.createElement('td');
+        const td3 = document.createElement('td');
+        td1.className = "cell100 column";
+        td2.className = "cell100 column";
+        td3.className = "cell100 column";
+        td1.textContent = person.name;
+        td2.textContent = person.number;
+        td3.textContent = person.state;
         tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
         document.getElementById('table-body').appendChild(tr);
         // document.getElementById('table-body').appendChild(td2);
       }

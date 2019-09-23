@@ -22,7 +22,6 @@
 					<li><a href="index.html" accesskey="1" title="">Švieslentė</a></li>
 					<li class="active"><a href="admin.html" accesskey="2" title="">Administracija</a></li>
 					<li><a href="specialist.html" accesskey="3" title="">Specialistas</a></li>
-					<li><a href="user.html" accesskey="4" title="">Lankytojas</a></li>
 				</ul>
 			</div>
 		</div>
@@ -31,17 +30,26 @@
 <div id="page-wrapper">
 	<div id="welcome" class="container">
     <div class="title">
-			<h2>Click the button to load data from json</h2>
+			<h2>Paspausk mygtuka kad užkrautum duomenis is JSON failiuko</h2>
 		</div>
-    <button class="json-load-btn" onclick="loadJson()">Load</button>
-      <input id="addName" type="text" placeholder="Vardas">
-			<select id="optionSpecialist">
-			  <option value="1" selected="selected">Rowan Mcdougall</option>
-			  <option value="2">Jayce Haines</option>
-			  <option value="3">Vikram Hall</option>
-			</select>
-      <input onclick="addForm()" type="submit" value="Add">
-      <input onclick="localStorage.clear();" type="submit" value="clear">
+    <button class="json-load-btn" onclick="loadJson()">Užkrauti</button>
+		<div class="add-form">
+			<div class="input-text">
+				<input id="addName" class="add-name" type="text" placeholder="Vardas">
+			</div>
+			<div class="select">
+				<select id="optionSpecialist">
+				  <option value="1" selected="selected">Rowan Mcdougall</option>
+				  <option value="2">Jayce Haines</option>
+				  <option value="3">Vikram Hall</option>
+				</select>
+			</div>
+			<div style="padding: 1em;">
+				<button onclick="addForm()" class="button7" style="">Pridėti</button>
+			</div>
+
+		</div>
+
 	</div>
 </div>
 

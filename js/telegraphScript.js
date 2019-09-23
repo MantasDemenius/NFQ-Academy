@@ -1,18 +1,26 @@
 window.onload = () => {
   const items = JSON.parse(localStorage.getItem('clientData'));
-  // items["specialists"].map(person => {
-  //   const th = document.createElement('th');
-  //   th.className = "cell100 column";
-  //   th.textContent = person.name;
-  //   document.getElementById('table-head').appendChild(th);
-  // });
+  loadTelegraph(items);
+
+}
+
+
+const loadTelegraph = (items) => {
+  let lastSpecialist = 'none';
   items["clients"].map(person => {
     if(person.state === 'Neaptarnautas') {
       const tr = document.createElement('tr');
       const td1 = document.createElement('td');
       const td2 = document.createElement('td');
-      td1.className = "cell100 column";
-      td2.className = "cell100 column";
+      if(lastSpecialist !== person.specialist){
+        td1.className = "cell100 column first-element";
+        td2.className = "cell100 column first-element";
+        lastSpecialist= person.specialist;
+      } else {
+        td1.className = "cell100 column";
+        td2.className = "cell100 column";
+      }
+
       td1.textContent = person.specialist;
       td2.textContent = person.number;
       tr.appendChild(td1);

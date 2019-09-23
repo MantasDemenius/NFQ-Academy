@@ -16,6 +16,7 @@
 
         button.setAttribute('type', 'button');
         button.setAttribute('value', 'Aptarnauti');
+        button.classList.add('button7');
 
         button.onclick = () => {
           person.state = 'Aptarnautas';

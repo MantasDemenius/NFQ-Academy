@@ -11,7 +11,7 @@
 }
 
 .json-load-btn {
-  text-align:center;
+  text-align: center;
   font-size: 1rem;
   font-family: 'Open Sans';
 }
@@ -26,5 +26,115 @@
 
 #table-head {
   font-size: 30px;
-  margin:auto;
+  margin: auto;
+}
+
+.first-element {
+  background-color: #336756;
+}
+
+.table-tag {
+  margin: auto;
+}
+
+.add-form {
+  padding: 2em 0;
+}
+
+.add-name {
+  color: #fff;
+  background: #2c3e50;
+  outline: 0;
+  border: 0;
+  height: 3em;
+  width: 20em;
+  border-radius: 0.25em;
+  margin: auto;
+  padding: 0 2em;
+}
+
+.input-text {
+  padding: 1em;
+}
+
+.add-name::placeholder {
+  color: #909090;
+  opacity: 1;
+  /* Firefox */
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  margin: auto;
+}
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #336756;
+}
+
+.button7 {
+  display: inline-block;
+  padding: 0.7em 1.7em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.2em;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #233142;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  cursor:pointer;
+}
 }
